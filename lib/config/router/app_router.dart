@@ -22,5 +22,10 @@ final appRouter = GoRouter(
       name: CardsScreen.name,
       builder: (context, state) => CardsScreen(),
     ),
+    GoRoute(
+      path: '/snackbars',
+      name: SnackbarScreen.name,
+      builder: (context, state) => SnackbarScreen(),
+    ),
   ],
 );

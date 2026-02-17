@@ -1,3 +1,4 @@
+import 'package:flutter/widgets.dart';
 import 'package:go_router/go_router.dart';
 import 'package:widgets_app/presentation/screens/screens.dart';
 
@@ -26,6 +27,18 @@ final appRouter = GoRouter(
       path: '/snackbars',
       name: SnackbarScreen.name,
       builder: (context, state) => SnackbarScreen(),
+    ),
+
+    GoRoute(
+      path: '/animated',
+      name: AnimatedScreen.name,
+      builder: (context, state) => AnimatedScreen(),
+    ),
+
+    GoRoute(
+      path: '/ui-controls',
+      name: UIControllsScreen.name,
+      builder: (context, state) => UIControllsScreen(),
     ),
   ],
 );
